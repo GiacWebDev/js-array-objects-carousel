@@ -41,3 +41,8 @@ const images = [
         text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
     }
 ];
+
+
+
+// 1. ricreo la struttura in html css
+// 2. creo un arrau di oggetti contenenti le immagini e le informazioni
