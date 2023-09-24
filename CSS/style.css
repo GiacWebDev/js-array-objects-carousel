@@ -83,3 +83,30 @@
   color: black;
   background-color: white;
 }
+
+/* Con esercizio array oggetti */
+.item {
+  position: relative;
+  height: 100%;
+  width: 800px;
+}
+
+.item h2 {
+  position: absolute;
+  bottom: 70px; 
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 10px;
+  width: 90%;
+}
+
+.item p {
+  position: absolute;
+  bottom: 10px; 
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 10px;
+  width: 90%;
+}
