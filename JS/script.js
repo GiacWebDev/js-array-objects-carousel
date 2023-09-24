@@ -59,23 +59,27 @@ nextBtnEl.addEventListener('click', function(){
   thumbCollection[counterImg].classList.remove('active');
   // aumenta il contatore e cambia immagine (da 0 a 1, 2 ecc...)
   counterImg++
+    // loop infinito
     // - rimuovo classe 'hide' a items
     // - aggiungo classe 'active' a thumb
+  if (counterImg === images.length) counterImg = 0;
   itemCollection[counterImg].classList.remove('hide');
   thumbCollection[counterImg].classList.add('active');
-});
-
-// con il pulsante prev (up):
-    // - aggiungo classe 'hide' a items
-    // - rimuovo classe 'active' a thumb
-
-    prevBtnEl.addEventListener('click', function(){
-      itemCollection[counterImg].classList.add('hide');
-      thumbCollection[counterImg].classList.remove('active');
-      // aumenta il contatore e cambia immagine (da 2 a 1, 0)
-      counterImg--
-        // - rimuovo classe 'hide' a items
-        // - aggiungo classe 'active' a thumb
-      itemCollection[counterImg].classList.remove('hide');
-      thumbCollection[counterImg].classList.add('active');
+  });
+  
+  // con il pulsante prev (up):
+  // - aggiungo classe 'hide' a items
+  // - rimuovo classe 'active' a thumb
+  
+  prevBtnEl.addEventListener('click', function(){
+    itemCollection[counterImg].classList.add('hide');
+    thumbCollection[counterImg].classList.remove('active');
+    // aumenta il contatore e cambia immagine (da 2 a 1, 0)
+    counterImg--
+    // loop infinito
+    // - rimuovo classe 'hide' a items
+    // - aggiungo classe 'active' a thumb
+    if (counterImg < 0) counterImg = images.length - 1;
+    itemCollection[counterImg].classList.remove('hide');
+    thumbCollection[counterImg].classList.add('active');
     });
